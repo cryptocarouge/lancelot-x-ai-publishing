@@ -19,3 +19,8 @@ This is a public portfolio repository. Security and privacy take priority over p
 Public documentation may describe architecture, technologies, data flow and engineering decisions. Production credentials, identifiers, private state and sensitive business logic stay private.
 
 If you notice information that appears sensitive, please avoid reposting it publicly.
+
+
+## Licensing
+
+No open-source license is granted by this repository. Public visibility is for portfolio and documentation purposes only unless the repository owner explicitly states otherwise.
