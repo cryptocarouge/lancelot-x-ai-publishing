@@ -2,6 +2,8 @@
 
 # Lancelot X AI Publishing
 
+**Live project page:** https://cryptocarouge.github.io/projects/lancelot-x-ai-publishing.html
+
 An autonomous research, editorial and publishing pipeline built with n8n.
 
 The private production system combines scheduled editions, live data, LLM-based editorial work, image generation, publication controls and Telegram operations. This repository documents the architecture without exposing production keys, private prompts or account identifiers.
