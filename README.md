@@ -1,5 +1,8 @@
 <p align="center"><img src="assets/header.svg" alt="Lancelot X AI Publishing" width="100%"></p>
 
+[![Public safety scan](https://github.com/cryptocarouge/lancelot-x-ai-publishing/actions/workflows/public-safety.yml/badge.svg)](https://github.com/cryptocarouge/lancelot-x-ai-publishing/actions/workflows/public-safety.yml)  
+**Portfolio-safe public edition · production remains private**
+
 # Lancelot X AI Publishing
 
 **Live project page:** https://cryptocarouge.github.io/projects/lancelot-x-ai-publishing.html
