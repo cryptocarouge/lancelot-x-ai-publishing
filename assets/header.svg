@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-label="Lancelot X">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#050a12"/><stop offset="1" stop-color="#0b1726"/></linearGradient>
+    <linearGradient id="a" x1="0" x2="1"><stop offset="0" stop-color="#20d6ff"/><stop offset="1" stop-color="#2c78ff"/></linearGradient>
+    <filter id="g"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="300" rx="26" fill="url(#bg)"/>
+  <g stroke="#25cfff" stroke-width="2" opacity="0.28"><path d="M45 75 H190 L235 120 H330"/><path d="M880 80 H1030 L1080 130 H1150"/><path d="M45 235 H185 L240 185 H330"/><path d="M875 225 H1020 L1075 180 H1150"/></g>
+  <g fill="#6de8ff"><circle cx="45" cy="75" r="5"/><circle cx="330" cy="120" r="5"/><circle cx="880" cy="80" r="5"/><circle cx="1150" cy="130" r="5"/></g>
+  <circle cx="195" cy="150" r="88" fill="none" stroke="url(#a)" stroke-width="5" opacity="0.75" filter="url(#g)"/>
+  <text x="195" y="177" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" fill="url(#a)">LX</text>
+  <text x="350" y="135" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="800" fill="#f6fbff">Lancelot X</text>
+  <text x="352" y="185" font-family="Arial, Helvetica, sans-serif" font-size="23" fill="#8fdfff">Research · editorial AI · image generation · verified publishing</text>
+  <text x="352" y="225" font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#9eafbf">CryptoCarouge · public architecture showcase</text>
+</svg>
