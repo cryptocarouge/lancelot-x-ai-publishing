@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/header.svg" alt="Lancelot X AI Publishing" width="100%"></p>
+
 # Lancelot X AI Publishing
 
 An autonomous research, editorial and publishing pipeline built with n8n.
@@ -6,73 +8,46 @@ The private production system combines scheduled editions, live data, LLM-based 
 
 ## What it demonstrates
 
-- Scheduled editorial editions
-- Market and macro data collection
-- RSS/news ingestion
+- Scheduled and manual editorial paths
+- Market, macro and RSS/news ingestion
 - Fact-building before generation
-- Separate editorial and AI-research paths
+- Separate editorial and AI-research routes
 - LLM-assisted copy generation
 - AI image generation
 - X media upload and publishing
 - Anti-spam and duplicate protection
 - Post-publication verification
 - Memory written only after confirmed publication
-- Manual Telegram commands
-- Success/error notifications and voice feedback
+- Telegram commands and operational feedback
 
 ## Architecture
 
-```text
-Schedules / Manual Command
-          |
-          v
- Data + News Collection
-          |
-          v
-   Fact Construction
-          |
-          +--> Editorial Prompt
-          |
-          +--> AI Research Prompt
-          |
-          v
-      LLM Generation
-          |
-          v
- Validation / Anti-Spam
-          |
-          +--> Image Generation
-          |
-          v
-       Publish to X
-          |
-          v
- Publication Verification
-          |
-          +--> Persist Memory
-          |
-          +--> Telegram Feedback
+```mermaid
+flowchart TD
+    A[Schedules / Manual Command] --> B[Data + News Collection]
+    B --> C[Fact Construction]
+    C --> D[Editorial Prompt]
+    C --> E[AI Research Prompt]
+    D --> F[LLM Generation]
+    E --> F
+    F --> G[Validation / Anti-Spam]
+    G --> H[Image Generation]
+    G --> I[Publish to X]
+    H --> I
+    I --> J[Publication Verification]
+    J --> K[Persist Memory]
+    J --> L[Telegram Feedback]
 ```
 
 ## Design choices
 
-The workflow deliberately keeps deterministic tasks outside the model where possible. Data gathering, routing, anti-spam checks, publication verification and state updates are handled as workflow logic.
+Deterministic tasks stay outside the model where possible. Data gathering, routing, anti-spam checks, publication verification and state updates are workflow logic.
 
 AI is used where it materially helps: research synthesis, editorial writing and image generation.
 
 ## Security boundary
 
-The private production workflow currently contains account-specific integrations and credentials. They are not published here.
-
-This public repository excludes:
-
-- OpenAI keys
-- X OAuth credentials
-- Telegram credentials and chat IDs
-- Private prompts
-- Account-specific publishing settings
-- Private memory/state
-- Production workflow JSON
+The public repository excludes OpenAI keys, X OAuth credentials, Telegram credentials/chat IDs, private prompts, account-specific publishing settings, private state and production workflow JSON.
 
 ## Status
 
